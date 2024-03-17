@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('/imgs/pexels-the-lazy-artist-gallery-1471117.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top {
+    width: 75px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.top .circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 7px auto;
+}
+
+.top div:nth-child(1) {
+    background-color: #0f0;
+}
+
+.top div:nth-child(2) {
+    background-color: yellow;
+}
+
+.top div:nth-child(3) {
+    background-color: red;
+}
+
+.middle {
+    height: 500px;
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bottom {
+    height: 20px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.hidden {
+    opacity: 0.3;
+}
+
+@media (width < 700px) {
+    .middle {
+        height: 350px;
+    }
+}
