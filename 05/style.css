@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-image: url("/imgs/pexels-pixabay-159393.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(3px);
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    user-select: none;
+}
+
+.container .box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    flex-direction: column;
+}
+
+.container .word {
+    font-size: 50px;
+    display: flex;
+}
+
+.container .word span {
+    background-color: white;
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    display: flex;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25%;
+    -webkit-border-radius: 25%;
+    -moz-border-radius: 25%;
+    -ms-border-radius: 25%;
+    -o-border-radius: 25%;
+    font-weight: bold;
+}
+
+.container .box .content {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .box .content .text {
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.container .box .content .text p {
+    margin-right: 10px;
+}
+
+.container .box .content .input input {
+    width: 100px;
+    height: 100px;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    color: white;
+    font-size: 50px;
+    padding-left: 35px;
+    margin-right: 10px;
+}
+
+.container .box .content .input button {
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    background-color: #36a2eb;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.container .box .wrongs {
+    font-size: 24px;
+    display: flex;
+}
+
+.container .box .wrongs p, 
+.container .box .wrongs span {
+    margin-right: 10px;
+}
