@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/imgs/pexels-photo-7103165.jpeg);
+    background-size: cover;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    overflow: hidden;
+}
+
+.container {
+    background-color: #08073b;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+#personsContainer { 
+    margin: 40px 0 20px;
+}
+
+.person {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 10px;
+    border-bottom: 1px solid #221c9b;
+    padding-bottom: 10px;
+}
+
+.vote-btn {
+    padding: 10px;
+    background-color: #221c9b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    position: relative;
+    bottom: 6px;
+}
+
+.votes {
+    font-size: 12px;
+    color: #ccc;
+    position: relative;
+    top: 5px;
+}
