@@ -1,0 +1,141 @@
+:root {
+    --text-color: #34495e;
+    --btn-background: #3498db;
+    --btn-hover-background: #2980b9;
+    --btn-active-background: #2ecc71;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f2f3f7;
+    color: var(--text-color);
+}
+
+h1,
+p {
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    max-width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    margin-top: 50px;
+}
+
+.image {
+    width: 100%;
+    margin-right: 20px;
+}
+
+img {
+    width: 100%;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.tabs {
+    width: 100%;
+}
+
+.tabs .btns {
+    display: flex;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    overflow: hidden;
+}
+
+.tabs .btns button {
+    width: calc(100% / 3);
+    background-color: var(--btn-background);
+    border: none;
+    cursor: pointer;
+    padding: 15px 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.tabs .btns button:hover {
+    background-color: var(--btn-hover-background);
+}
+
+.text {
+    position: relative;
+}
+
+.text > div {
+    position: absolute;
+    left: 200%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    font-size: 14px;
+}
+
+.text div:first-child {
+    left: 0;
+}
+
+.active {
+    background-color: var(--btn-active-background) !important;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+@media (width < 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .image,
+    .btns,
+    .text {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .container {
+        overflow: visible;
+    }
+    .tabs .btns button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
