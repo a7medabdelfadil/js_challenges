@@ -1,5 +1,5 @@
-# 30_Challenges_in_Ramadan
-## 30 Challenges in Ramadan on my channel https://www.youtube.com/@abufadell 
+# JavaScript Challenges
+## the Challenges on my channel https://www.youtube.com/@abufadell 
 
 ### 01:<br>
 #### &nbsp;Video -> https://youtu.be/TmhEveLsPP8<br>
